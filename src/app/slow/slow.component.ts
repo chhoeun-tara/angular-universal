@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { GetDataService } from '../get-data.service';
 
@@ -6,15 +7,14 @@ import { GetDataService } from '../get-data.service';
   selector: 'app-slow',
   template: `
     <p>
-      Response is: {{response | async | json}}
+      Response is: {{response | json}}
     </p>
   `,
   styles: []
 })
 export class SlowComponent {
 
-
-  public response: Observable<any> = this.service.getSlow();
-  constructor(private service: GetDataService) { }
+  public response: any = this.router.snapshot.data.response;
+  constructor(private router: ActivatedRoute) { }
 
 }

@@ -30,7 +30,7 @@
     "@angular/platform-server": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@ng-toolkit/universal": "^8.1.0",
-    "@nguniversal/common": "8.1.0",
+    "@nguniversal/common": "^8.1.0",
     "@nguniversal/express-engine": "v8.2.6",
     "@nguniversal/module-map-ngfactory-loader": "v8.2.6",
     "domino": "^2.1.4",
